@@ -1,6 +1,7 @@
 import express from "express"
 import { addFood, deleteFoodPostByDonor, foodStatusUpdate, getAllFoodPost, getDonorFoodPost, getFoodPostById, updatePostBydonor } from "../controllers/food.controller.js"
 
+
 const router = express.Router()
 
 
@@ -13,4 +14,4 @@ router.patch('/food-status-update/:id', foodStatusUpdate);
 router.delete('/delete-by-donor/:id', deleteFoodPostByDonor);
 
 
-export default router 
+export default router;
